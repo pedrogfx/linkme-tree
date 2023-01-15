@@ -12,8 +12,8 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider theme={themes[pageProps.theme] || themes['default-dark']}>
       <Component {...pageProps} />
-    </ThemeProvider>
-  )
+    </ThemeProvider> 
+  ) 
 }
 
 export default MyApp
