@@ -31,11 +31,8 @@ stats:
     value: 7+
     label: years in data
   - id: 2
-    value: 1K+
-    label: Airflow DAGs
-  - id: 3
-    value: 300+
-    label: streaming pipelines
+    value: 2x
+    label: Airflow 3 certified
 links:
   - id: 1
     title: Find me
