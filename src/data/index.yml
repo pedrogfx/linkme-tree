@@ -1,15 +1,15 @@
 meta:
-  title: Pedro Goulart Rodrigues — Senior Data Engineer
-  description: Cloud data engineer building scalable data platforms on GCP and AWS — real-time streaming, SAP integrations and FinOps.
-  tags: data engineering, data platform, apache airflow, kafka, spark, bigquery, gcp, aws, terraform, finops, sap
+  title: Pedro Goulart Rodrigues — Senior Data Platform Engineer
+  description: Senior data engineer building scalable batch and streaming data platforms on GCP and AWS — architecture, reliability, FinOps and data products.
+  tags: data engineering, data platform, apache airflow, kafka, spark, dbt, bigquery, gcp, aws, kubernetes, terraform, finops, data products
   author: Pedro Goulart Rodrigues
 theme: default-dark
 name: Pedro Goulart Rodrigues
-occupancy: Senior Data Engineer · Data Platform Engineer
+occupancy: Senior Data Platform Engineer · Arco Educação
 about: >-
-  Cloud data engineer with 5+ years building scalable data platforms —
-  real-time streaming, SAP integrations and FinOps. I keep high-scale GCP and
-  AWS systems reliable while bringing cloud costs down.
+  Senior data engineer with 7+ years in data and the last four in cloud. I build
+  and own batch and streaming platforms end to end — architecture, reliability,
+  cost and the data products teams actually rely on.
 avatar: https://avatars.githubusercontent.com/u/53497166?v=4
 location: Porto Alegre, Brazil
 ctas:
@@ -28,14 +28,14 @@ ctas:
     variant: ghost
 stats:
   - id: 1
-    value: 5+
+    value: 7+
     label: years in data
   - id: 2
-    value: "2"
-    label: cloud platforms
+    value: 1K+
+    label: Airflow DAGs
   - id: 3
-    value: FinOps
-    label: cost optimization
+    value: 300+
+    label: streaming pipelines
 links:
   - id: 1
     title: Find me
@@ -54,47 +54,64 @@ links:
         color: "#64FFDA"
 experience:
   - id: 1
-    role: Data Engineer / Data Platform Engineer
+    role: Senior Data Platform Engineer
+    company: Arco Educação
+    period: Sep 2026 — Present
+    description: Senior data platform engineering for one of the largest education groups in Brazil — scalable batch and streaming data products.
+    tags:
+      - GCP
+      - Kafka
+      - Airflow
+      - Kubernetes
+      - Data Products
+  - id: 2
+    role: Data Platform Engineer
     company: Grupo SBF
-    period: Mar 2022 — Present
-    description: Building and running the data platform that serves the whole group, from real-time ingestion to governed analytics.
+    period: Mar 2022 — Sep 2026
+    description: Large-scale data platform for one of the largest sports retailers in Latin America — batch and streaming, owned end to end.
     highlights:
-      - Built batch and real-time pipelines with Python and Spark on GCP (BigQuery, Dataproc, Cloud Storage, Kubernetes).
-      - Orchestrated ETL/ELT with Airflow on GKE and shipped Kafka/Confluent ingestion APIs with AVRO and full test coverage.
-      - Led the SAP ingestion architecture with AecorSoft CDC and SAP DataSphere real-time streaming.
-      - Automated infrastructure with Terraform, Helm and GitHub Actions; reduced BigQuery and GCS costs via slot reservations and monitoring.
+      - Owned a platform with 1,000+ Airflow DAGs and 300+ Kafka streaming pipelines, processing tens of TB a day for 1,000+ internal users.
+      - Led the SAP streaming integration with Kafka and SAP Datasphere, adding schema-change detection and proactive alerts for breaking changes.
+      - Took part in the AWS-to-GCP migration, redesigning pipelines and decommissioning legacy systems.
+      - Cut Kubernetes costs by ~23% and storage costs by 15% without touching SLAs.
+      - Designed task-level SLA monitoring and dashboards, reducing delays through proactive alerting.
+      - Built an AI-based solution to detect sensitive data, strengthening governance and security.
     tags:
       - GCP
       - Airflow
       - Kafka
+      - Kubernetes
       - Terraform
       - SAP
-  - id: 2
+      - FinOps
+  - id: 3
     role: Data Engineer
     company: RCI Analytics Consulting
     period: Oct 2019 — Mar 2022
-    description: Consulting projects across retail and logistics, from source integration to decision-ready dashboards.
+    description: Data platforms for retail, finance and logistics clients, from source integration to reliable analytics.
     highlights:
-      - Built pipelines with SSIS, Pentaho, Python and Tableau Prep over REST APIs, FTP, Oracle, MSSQL, PostgreSQL, Redshift and S3.
-      - Modeled star and snowflake data warehouses and delivered Power BI and Tableau dashboards.
-      - Delivered analytics platforms for clients such as Usaflex (AWS data lake, DW and ODS) and Indigo (Azure + SSIS + Power BI).
+      - Built end-to-end pipelines integrating 10+ sources and processing ~5TB a day.
+      - Reduced pipeline failures by 30% by optimizing SQL queries and API ingestion.
+      - Modeled star and snowflake warehouses and delivered dashboards used by 300+ people.
     tags:
+      - Python
       - SSIS
       - Pentaho
-      - Python
       - Redshift
       - Power BI
-  - id: 3
+      - Tableau
+  - id: 4
     role: Data Auditing
     company: Grupo Oleoplan
     period: Jan 2019 — Oct 2019
-    description: Fiscal and invoicing data auditing, with reporting to support the business.
+    description: Started my career with fiscal and invoice data for one of the largest biodiesel producers in Brazil.
     highlights:
-      - Audited fiscal data and product invoicing, ensuring compliance with tax standards.
-      - Built Power BI dashboards to monitor financial performance.
+      - Audited invoicing and sales data to support tax reporting and compliance.
+      - Built Power BI dashboards to track financial KPIs and cut manual reporting.
     tags:
-      - SQL
       - Power BI
+      - Excel
+      - Data Auditing
 skills:
   - id: 1
     title: Core
@@ -104,6 +121,7 @@ skills:
       - Spark
       - Airflow
       - Kafka
+      - dbt
       - DuckDB
   - id: 2
     title: Cloud
@@ -125,13 +143,17 @@ skills:
       - Helm
       - GitHub Actions
       - CI/CD
+      - FinOps
   - id: 4
-    title: Data & Tools
+    title: Data & Products
     items:
       - Data Warehousing
       - Streaming
       - ETL/ELT
       - Data Governance
+      - SLA Monitoring
+      - Data Products
+      - API Design
       - Power BI
       - Tableau
       - SSIS
@@ -161,8 +183,12 @@ education:
   - id: 1
     degree: B.Sc. Systems Analysis
     school: Descomplica
-    period: Dec 2025
-languages: Portuguese (native) · English (advanced)
+    period: Jul 2023 — Dec 2025
+  - id: 2
+    degree: Systems Analysis
+    school: UniRitter
+    period: 2019 — 2022
+languages: Portuguese (native) · English (full professional)
 cards:
   - id: 1
     title: This site is open source
