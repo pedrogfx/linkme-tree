@@ -259,16 +259,22 @@ const About: React.FC<IAbout> = ({
 
       {!!ctas?.length && (
         <CtaRow>
-          {ctas.map((cta) => (
-            <Cta
-              key={cta.id}
-              href={cta.url}
-              variant={cta.variant || "ghost"}
-              rel="noopener noreferrer"
-            >
-              {cta.title}
-            </Cta>
-          ))}
+          {ctas.map((cta) => {
+            const isExternal = /^https?:\/\//.test(cta.url);
+
+            return (
+              <Cta
+                key={cta.id}
+                href={cta.url}
+                variant={cta.variant || "ghost"}
+                download={cta.download || undefined}
+                target={isExternal ? "_blank" : undefined}
+                rel="noopener noreferrer"
+              >
+                {cta.title}
+              </Cta>
+            );
+          })}
         </CtaRow>
       )}
 

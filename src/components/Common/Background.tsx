@@ -27,6 +27,11 @@ const Glow = styled.div`
   filter: blur(90px);
   opacity: 0.35;
   animation: ${drift} 18s ease-in-out infinite;
+
+  @media (max-width: 640px) {
+    opacity: 0.2;
+    filter: blur(80px);
+  }
 `;
 
 const Grid = styled.div`

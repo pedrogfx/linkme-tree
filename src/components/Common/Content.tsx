@@ -8,12 +8,12 @@ const Content = styled.main`
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  padding: 56px 0 28px;
+  padding: calc(56px + var(--safe-top)) 0 28px;
   gap: 30px;
   text-align: left;
 
   @media (max-width: 640px) {
-    padding-top: 28px;
+    padding-top: calc(20px + var(--safe-top));
     gap: 24px;
   }
 `;

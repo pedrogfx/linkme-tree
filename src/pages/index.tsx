@@ -8,6 +8,7 @@ import Cards from "../components/Cards";
 import Experience from "../components/Experience";
 import Skills from "../components/Skills";
 import Certifications from "../components/Certifications";
+import Education from "../components/Education";
 import Background from "../components/Common/Background";
 import Container from "../components/Common/Container";
 import Content from "../components/Common/Content";
@@ -26,6 +27,8 @@ const Home: NextPage<IData> = ({
   experience,
   skills,
   certifications,
+  education,
+  languages,
   meta,
 }) => {
   const structuredData = {
@@ -49,7 +52,10 @@ const Home: NextPage<IData> = ({
         <meta name="description" content={meta.description} />
         <meta name="keywords" content={meta.tags} />
         <meta name="author" content={meta.author} />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, viewport-fit=cover"
+        />
         <meta property="og:type" content="profile" />
         <meta property="og:title" content={meta.title} />
         <meta property="og:description" content={meta.description} />
@@ -80,6 +86,7 @@ const Home: NextPage<IData> = ({
         <Experience experience={experience || []} />
         <Skills skills={skills || []} />
         <Certifications certifications={certifications || []} />
+        <Education education={education || []} languages={languages} />
         <Cards cards={cards || []} />
       </Content>
 

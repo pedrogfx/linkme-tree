@@ -17,11 +17,12 @@ There are two ways you can customize LinkMe Tree for your needs. One of them is 
 Besides the core fields (`meta`, `name`, `occupancy`, `about`, `avatar`, `links`, `cards`), the page renders optional sections when present in the YAML:
 
 - `location` — small pill under the avatar (e.g. city, remote)
-- `ctas` — buttons in the hero (`title`, `url`, `variant: primary | ghost`)
+- `ctas` — buttons in the hero (`title`, `url`, `variant: primary | ghost`, optional `download`)
 - `stats` — numbers under the hero (`value`, `label`)
-- `experience` — timeline (`role`, `company`, `period`, `description`, `tags`)
+- `experience` — timeline (`role`, `company`, `period`, `description`, optional `highlights`, `tags`)
 - `skills` — toolbox groups (`title`, `items`)
 - `certifications` — credential rows (`title`, `issuer`, `date`, `url`)
+- `education` — degree rows (`degree`, `school`, `period`) and optional `languages` line
 
 ## Updating `src/data/index.yml`
 

@@ -48,6 +48,7 @@ interface ICta {
   title: string;
   url: string;
   variant?: "primary" | "ghost";
+  download?: boolean;
 }
 
 interface IStat {
@@ -62,7 +63,15 @@ interface IExperience {
   company: string;
   period: string;
   description: string;
+  highlights?: string[];
   tags?: string[];
+}
+
+interface IEducation {
+  id: number;
+  degree: string;
+  school: string;
+  period: string;
 }
 
 interface ISkillGroup {
@@ -97,6 +106,8 @@ interface IData {
   experience?: IExperience[];
   skills?: ISkillGroup[];
   certifications?: ICertification[];
+  education?: IEducation[];
+  languages?: string;
   links?: ILink[];
   cards?: ICard[];
 }

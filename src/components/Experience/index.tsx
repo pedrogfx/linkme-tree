@@ -61,9 +61,16 @@ const Item = styled.article`
 const Header = styled.div`
   display: flex;
   flex-wrap: wrap;
-  align-items: baseline;
+  align-items: flex-start;
   justify-content: space-between;
   gap: 6px 12px;
+`;
+
+const HeaderTitle = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
 `;
 
 const Role = styled.h3`
@@ -75,6 +82,7 @@ const Role = styled.h3`
 `;
 
 const Period = styled.span`
+  padding-top: 3px;
   font-family: var(--font-mono);
   font-size: 11px;
   letter-spacing: 0.04em;
@@ -84,7 +92,6 @@ const Period = styled.span`
 
 const Company = styled.span`
   display: block;
-  margin-top: 4px;
   font-size: 12.5px;
   font-weight: 500;
   color: ${(props) => props.theme.colors.text.accent};
@@ -115,6 +122,32 @@ const Tag = styled.span`
   color: ${(props) => props.theme.colors.text.secondary};
 `;
 
+const Highlights = styled.ul`
+  margin: 12px 0 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+`;
+
+const Highlight = styled.li`
+  position: relative;
+  padding-left: 16px;
+  font-size: 12.5px;
+  line-height: 1.6;
+  color: ${(props) => props.theme.colors.text.secondary};
+
+  &::before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 11px;
+    color: ${(props) => props.theme.colors.accent};
+  }
+`;
+
 const Experience: React.FC<{ experience: IExperience[] }> = ({ experience }) => {
   if (!experience.length) return null;
 
@@ -125,11 +158,22 @@ const Experience: React.FC<{ experience: IExperience[] }> = ({ experience }) => 
         {experience.map((item) => (
           <Item key={item.id}>
             <Header>
-              <Role>{item.role}</Role>
+              <HeaderTitle>
+                <Role>{item.role}</Role>
+                <Company>{item.company}</Company>
+              </HeaderTitle>
               <Period>{item.period}</Period>
             </Header>
-            <Company>{item.company}</Company>
-            <Description>{item.description}</Description>
+            {!!item.description && (
+              <Description>{item.description}</Description>
+            )}
+            {!!item.highlights?.length && (
+              <Highlights>
+                {item.highlights.map((highlight) => (
+                  <Highlight key={highlight}>{highlight}</Highlight>
+                ))}
+              </Highlights>
+            )}
             {!!item.tags?.length && (
               <Tags>
                 {item.tags.map((tag) => (

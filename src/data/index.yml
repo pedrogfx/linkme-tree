@@ -1,37 +1,41 @@
 meta:
-  title: Pedro Goulart Rodrigues — Data Engineer
-  description: Data engineer building the platforms, tools and data products that let a whole company move data with confidence.
-  tags: data engineering, data platform, analytics engineering, apache airflow, dbt, bigquery, python, spark, sql
+  title: Pedro Goulart Rodrigues — Senior Data Engineer
+  description: Cloud data engineer building scalable data platforms on GCP and AWS — real-time streaming, SAP integrations and FinOps.
+  tags: data engineering, data platform, apache airflow, kafka, spark, bigquery, gcp, aws, terraform, finops, sap
   author: Pedro Goulart Rodrigues
 theme: default-dark
 name: Pedro Goulart Rodrigues
-occupancy: Data Engineer · Arco Educação
+occupancy: Senior Data Engineer · Data Platform Engineer
 about: >-
-  I build the platforms, tools, and data products that let a whole company move
-  data with confidence — from ingestion and orchestration to the models and
-  numbers people actually trust. Seven years turning messy sources into
-  pipelines that just work.
+  Cloud data engineer with 5+ years building scalable data platforms —
+  real-time streaming, SAP integrations and FinOps. I keep high-scale GCP and
+  AWS systems reliable while bringing cloud costs down.
 avatar: https://avatars.githubusercontent.com/u/53497166?v=4
-location: Porto Alegre, Brazil · Remote
+location: Porto Alegre, Brazil
 ctas:
   - id: 1
     title: Get in touch
     url: mailto:hi@pedrorod.com
     variant: primary
   - id: 2
+    title: Download CV
+    url: /assets/pedro-goulart-rodrigues-resume.pdf
+    variant: ghost
+    download: true
+  - id: 3
     title: LinkedIn
     url: https://www.linkedin.com/in/pedro-goulart-rodrigues/
     variant: ghost
 stats:
   - id: 1
-    value: 7+
+    value: 5+
     label: years in data
   - id: 2
-    value: 3.9K
-    label: LinkedIn followers
+    value: "2"
+    label: cloud platforms
   - id: 3
-    value: 2×
-    label: Airflow 3 certified
+    value: FinOps
+    label: cost optimization
 links:
   - id: 1
     title: Find me
@@ -50,60 +54,88 @@ links:
         color: "#64FFDA"
 experience:
   - id: 1
-    role: Data Engineer
-    company: Arco Educação
+    role: Data Engineer / Data Platform Engineer
+    company: Grupo SBF
     period: Mar 2022 — Present
-    description: Building the data platform that serves the whole company on Google Cloud — ingestion, orchestration and transformation, from raw sources to analytics-ready models.
+    description: Building and running the data platform that serves the whole group, from real-time ingestion to governed analytics.
+    highlights:
+      - Built batch and real-time pipelines with Python and Spark on GCP (BigQuery, Dataproc, Cloud Storage, Kubernetes).
+      - Orchestrated ETL/ELT with Airflow on GKE and shipped Kafka/Confluent ingestion APIs with AVRO and full test coverage.
+      - Led the SAP ingestion architecture with AecorSoft CDC and SAP DataSphere real-time streaming.
+      - Automated infrastructure with Terraform, Helm and GitHub Actions; reduced BigQuery and GCS costs via slot reservations and monitoring.
     tags:
-      - Google Cloud
-      - Apache Airflow
-      - BigQuery
-      - dbt
+      - GCP
+      - Airflow
+      - Kafka
+      - Terraform
+      - SAP
   - id: 2
     role: Data Engineer
     company: RCI Analytics Consulting
     period: Oct 2019 — Mar 2022
-    description: Designed and maintained ETL/ELT pipelines and data warehouses for consulting clients, integrating business systems and making reporting reliable.
+    description: Consulting projects across retail and logistics, from source integration to decision-ready dashboards.
+    highlights:
+      - Built pipelines with SSIS, Pentaho, Python and Tableau Prep over REST APIs, FTP, Oracle, MSSQL, PostgreSQL, Redshift and S3.
+      - Modeled star and snowflake data warehouses and delivered Power BI and Tableau dashboards.
+      - Delivered analytics platforms for clients such as Usaflex (AWS data lake, DW and ODS) and Indigo (Azure + SSIS + Power BI).
     tags:
+      - SSIS
+      - Pentaho
       - Python
-      - SQL
-      - Amazon Redshift
-      - Data Warehousing
+      - Redshift
+      - Power BI
   - id: 3
     role: Data Auditing
     company: Grupo Oleoplan
     period: Jan 2019 — Oct 2019
-    description: Audited operational data and built the reporting that supported the business — where caring about data quality became a habit.
+    description: Fiscal and invoicing data auditing, with reporting to support the business.
+    highlights:
+      - Audited fiscal data and product invoicing, ensuring compliance with tax standards.
+      - Built Power BI dashboards to monitor financial performance.
     tags:
       - SQL
-      - Reporting
+      - Power BI
 skills:
   - id: 1
-    title: Languages
+    title: Core
     items:
       - Python
       - SQL
-      - PySpark
+      - Spark
+      - Airflow
+      - Kafka
+      - DuckDB
   - id: 2
-    title: Orchestration
+    title: Cloud
     items:
-      - Apache Airflow
-      - dbt
-      - Datastream
-  - id: 3
-    title: Cloud & Warehouse
-    items:
-      - Google Cloud
+      - GCP
       - BigQuery
+      - Dataproc
       - Cloud Storage
-      - Amazon Redshift
-  - id: 4
-    title: Integration
+      - Composer
+      - AWS
+      - Redshift
+      - S3
+      - Athena
+  - id: 3
+    title: Platform & DevOps
     items:
-      - Airbyte
-      - SAP
+      - Kubernetes
+      - Terraform
+      - Helm
+      - GitHub Actions
+      - CI/CD
+  - id: 4
+    title: Data & Tools
+    items:
+      - Data Warehousing
+      - Streaming
+      - ETL/ELT
+      - Data Governance
+      - Power BI
+      - Tableau
       - SSIS
-      - REST APIs
+      - Pentaho
 certifications:
   - id: 1
     title: Apache Airflow 3 Fundamentals
@@ -125,6 +157,12 @@ certifications:
     issuer: Google
     date: Aug 2023
     url: https://www.cloudskillsboost.google/public_profiles/17813843-3bc6-4819-96c5-4533f00d348d/badges/4707788
+education:
+  - id: 1
+    degree: B.Sc. Systems Analysis
+    school: Descomplica
+    period: Dec 2025
+languages: Portuguese (native) · English (advanced)
 cards:
   - id: 1
     title: This site is open source

@@ -6,7 +6,7 @@ const FooterContainer = styled.footer`
   border-top: 1px solid ${(props) => props.theme.colors.card.border};
   background: rgba(5, 7, 13, 0.5);
   color: ${(props) => props.theme.colors.text.muted};
-  padding: 22px 0;
+  padding: 22px 0 calc(22px + var(--safe-bottom));
   font-family: var(--font-mono);
   font-size: 10.5px;
   letter-spacing: 0.06em;
