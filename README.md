@@ -14,6 +14,15 @@ If you're looking for a personal website, links to your social media, links to p
 
 There are two ways you can customize LinkMe Tree for your needs. One of them is to update the YAML file inside `src/data`, and the second one is to have Gist file with all your information to be deployed.
 
+Besides the core fields (`meta`, `name`, `occupancy`, `about`, `avatar`, `links`, `cards`), the page renders optional sections when present in the YAML:
+
+- `location` — small pill under the avatar (e.g. city, remote)
+- `ctas` — buttons in the hero (`title`, `url`, `variant: primary | ghost`)
+- `stats` — numbers under the hero (`value`, `label`)
+- `experience` — timeline (`role`, `company`, `period`, `description`, `tags`)
+- `skills` — toolbox groups (`title`, `items`)
+- `certifications` — credential rows (`title`, `issuer`, `date`, `url`)
+
 ## Updating `src/data/index.yml`
 
 If you want to have everything in one place, this option is for you. You just need to fork this repository, update the file with all your information and deploy it anywhere you want.

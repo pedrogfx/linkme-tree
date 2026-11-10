@@ -39,8 +39,21 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <Html>
-        <Head>{this.props.styles}</Head>
+      <Html lang="en">
+        <Head>
+          {this.props.styles}
+          <meta name="theme-color" content="#05070D" />
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossOrigin="anonymous"
+          />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+            rel="stylesheet"
+          />
+        </Head>
         <body>
           <Main />
           <NextScript />

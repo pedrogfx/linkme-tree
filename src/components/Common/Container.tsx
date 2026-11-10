@@ -1,9 +1,11 @@
 import styled from "styled-components";
 
 const Container = styled.div`
-  background: ${(props) => props.theme.colors.primary};
+  position: relative;
+  z-index: 1;
+  background: transparent;
   min-height: 100vh;
   text-align: center;
 `;
 
-export default Container
+export default Container;

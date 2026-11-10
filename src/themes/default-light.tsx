@@ -1,32 +1,36 @@
-const defaultDark: ITheme = {
+const defaultLight: ITheme = {
   colors: {
-    accent: "#269379",
-    primary: "#E8F1FF",
+    accent: "#0F9C7E",
+    accentSecondary: "#5B4BE0",
+    primary: "#F4F7FC",
+    surface: "rgba(255, 255, 255, 0.72)",
+    surfaceHover: "#FFFFFF",
     card: {
-      background: "#D6E4FB",
-      border: "#CAD8F0",
+      background: "rgba(255, 255, 255, 0.72)",
+      border: "rgba(10, 25, 47, 0.08)",
     },
     text: {
-      accent: "#269379",
+      accent: "#0F9C7E",
       primary: "#0A192F",
-      secondary: "#697494",
+      secondary: "#4C5A72",
+      muted: "#7A879C",
     },
   },
   common: {
-    borderRadius: "4px",
-    gap: "16px",
+    borderRadius: "18px",
+    gap: "14px",
     borderSize: "1px",
-    width: "516px",
+    width: "720px",
   },
   typography: {
-    titleFontSize: "24px",
-    subtitleFontSize: "12px",
-    subtitleLineHeight: "14px",
-    textFontSize: "12px",
-    textLineHeight: "14px",
-    sectionTitleFontSize: "16px",
-    sectionTitleLineHeight: "18px",
-  }
+    titleFontSize: "21px",
+    subtitleFontSize: "14px",
+    subtitleLineHeight: "20px",
+    textFontSize: "14px",
+    textLineHeight: "22px",
+    sectionTitleFontSize: "11px",
+    sectionTitleLineHeight: "14px",
+  },
 };
 
-export default defaultDark;
+export default defaultLight;

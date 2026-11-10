@@ -1,28 +1,135 @@
 meta:
-  title: Pedro Goulart
-  description: data
-  author: Pedro Goulart
+  title: Pedro Goulart Rodrigues — Data Engineer
+  description: Data engineer building the platforms, tools and data products that let a whole company move data with confidence.
+  tags: data engineering, data platform, analytics engineering, apache airflow, dbt, bigquery, python, spark, sql
+  author: Pedro Goulart Rodrigues
 theme: default-dark
-name: Pedro Rodrigues
-occupancy: data platform engineer
-about: data lover.
+name: Pedro Goulart Rodrigues
+occupancy: Data Engineer · Arco Educação
+about: >-
+  I build the platforms, tools, and data products that let a whole company move
+  data with confidence — from ingestion and orchestration to the models and
+  numbers people actually trust. Seven years turning messy sources into
+  pipelines that just work.
 avatar: https://avatars.githubusercontent.com/u/53497166?v=4
+location: Porto Alegre, Brazil · Remote
+ctas:
+  - id: 1
+    title: Get in touch
+    url: mailto:hi@pedrorod.com
+    variant: primary
+  - id: 2
+    title: LinkedIn
+    url: https://www.linkedin.com/in/pedro-goulart-rodrigues/
+    variant: ghost
+stats:
+  - id: 1
+    value: 7+
+    label: years in data
+  - id: 2
+    value: 3.9K
+    label: LinkedIn followers
+  - id: 3
+    value: 2×
+    label: Airflow 3 certified
 links:
   - id: 1
-    title: Pedro Consulting
-    items:
-      - id: 1
-        title: Contact
-        url: mailto:hi@pedrorod.com
-        color: "#FFFFFF"
-  - id: 2
-    title: Find me!
+    title: Find me
     items:
       - id: 1
         title: LinkedIn
         url: https://www.linkedin.com/in/pedro-goulart-rodrigues/
-        color: "#0077B5"
+        color: "#0A66C2"
       - id: 2
         title: GitHub
         url: https://www.github.com/pedrogfx/
         color: "#FFFFFF"
+      - id: 3
+        title: Email
+        url: mailto:hi@pedrorod.com
+        color: "#64FFDA"
+experience:
+  - id: 1
+    role: Data Engineer
+    company: Arco Educação
+    period: Mar 2022 — Present
+    description: Building the data platform that serves the whole company on Google Cloud — ingestion, orchestration and transformation, from raw sources to analytics-ready models.
+    tags:
+      - Google Cloud
+      - Apache Airflow
+      - BigQuery
+      - dbt
+  - id: 2
+    role: Data Engineer
+    company: RCI Analytics Consulting
+    period: Oct 2019 — Mar 2022
+    description: Designed and maintained ETL/ELT pipelines and data warehouses for consulting clients, integrating business systems and making reporting reliable.
+    tags:
+      - Python
+      - SQL
+      - Amazon Redshift
+      - Data Warehousing
+  - id: 3
+    role: Data Auditing
+    company: Grupo Oleoplan
+    period: Jan 2019 — Oct 2019
+    description: Audited operational data and built the reporting that supported the business — where caring about data quality became a habit.
+    tags:
+      - SQL
+      - Reporting
+skills:
+  - id: 1
+    title: Languages
+    items:
+      - Python
+      - SQL
+      - PySpark
+  - id: 2
+    title: Orchestration
+    items:
+      - Apache Airflow
+      - dbt
+      - Datastream
+  - id: 3
+    title: Cloud & Warehouse
+    items:
+      - Google Cloud
+      - BigQuery
+      - Cloud Storage
+      - Amazon Redshift
+  - id: 4
+    title: Integration
+    items:
+      - Airbyte
+      - SAP
+      - SSIS
+      - REST APIs
+certifications:
+  - id: 1
+    title: Apache Airflow 3 Fundamentals
+    issuer: Astronomer
+    date: Nov 2025
+    url: https://www.credly.com/badges/67e5e8a1-447a-44f0-ba16-81e2fd8d305a/public_url
+  - id: 2
+    title: DAG Authoring for Apache Airflow 3
+    issuer: Astronomer
+    date: Nov 2025
+    url: https://www.credly.com/badges/e4c31f1b-bcb1-49e9-a8c9-6d0ab651316f/public_url
+  - id: 3
+    title: Associate Cloud Engineer — study track
+    issuer: Alura
+    date: 2023
+    url: https://cursos.alura.com.br/certificate/d3fc2308-e6fc-4203-9416-63f51fbf33a7?lang=en
+  - id: 4
+    title: Cloud Hero — BigQuery Skills
+    issuer: Google
+    date: Aug 2023
+    url: https://www.cloudskillsboost.google/public_profiles/17813843-3bc6-4819-96c5-4533f00d348d/badges/4707788
+cards:
+  - id: 1
+    title: This site is open source
+    items:
+      - id: 1
+        title: LinkMeTree
+        url: https://github.com/willianrod/linkme-tree
+        description: A self-hosted, privacy-friendly link tree. No cookies, no trackers — just the links that matter, which is why this page runs on it.

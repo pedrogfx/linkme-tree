@@ -3,7 +3,7 @@ import styled from "styled-components";
 const LinksHolder = styled.div`
   display: flex;
   flex-direction: column;
-  gap: ${props => props.theme.common.gap};
-`
+  gap: 10px;
+`;
 
-export default LinksHolder
+export default LinksHolder;

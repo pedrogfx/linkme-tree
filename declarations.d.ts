@@ -7,7 +7,10 @@ interface Home {
 interface ITheme {
   colors: {
     accent: string;
+    accentSecondary: string;
     primary: string;
+    surface: string;
+    surfaceHover: string;
     card: {
       background: string;
       border: string;
@@ -16,6 +19,7 @@ interface ITheme {
       accent: string;
       primary: string;
       secondary: string;
+      muted: string;
     };
   };
   common: {
@@ -39,6 +43,42 @@ interface IThemes {
   [key: string]: ITheme;
 }
 
+interface ICta {
+  id: number;
+  title: string;
+  url: string;
+  variant?: "primary" | "ghost";
+}
+
+interface IStat {
+  id: number;
+  value: string;
+  label: string;
+}
+
+interface IExperience {
+  id: number;
+  role: string;
+  company: string;
+  period: string;
+  description: string;
+  tags?: string[];
+}
+
+interface ISkillGroup {
+  id: number;
+  title: string;
+  items: string[];
+}
+
+interface ICertification {
+  id: number;
+  title: string;
+  issuer: string;
+  date: string;
+  url?: string;
+}
+
 interface IData {
   meta: {
     title: string;
@@ -51,6 +91,12 @@ interface IData {
   occupancy: string;
   about: string;
   avatar: string;
+  location?: string;
+  ctas?: ICta[];
+  stats?: IStat[];
+  experience?: IExperience[];
+  skills?: ISkillGroup[];
+  certifications?: ICertification[];
   links?: ILink[];
   cards?: ICard[];
 }
@@ -82,4 +128,7 @@ interface ILinkItem {
   color?: string;
 }
 
-type IAbout = pick<IData, "name" | "occupancy" | "about" | "avatar">;
+type IAbout = Pick<
+  IData,
+  "name" | "occupancy" | "about" | "avatar" | "location" | "ctas" | "stats"
+>;
